@@ -1,0 +1,23 @@
+.auth-container{
+    background-color:#fff;
+    padding: 16px;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 60px auto;
+    border: 6px solid #666666;
+}
+.auth-container-title{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    letter-spacing: 6px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #cfcece;
+}
+.label-text{
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--text-color);
+}

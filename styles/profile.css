@@ -1,0 +1,64 @@
+.profile_page .avatar{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile_page .avatar img{
+    height: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.profile_page .avatar span{
+    position:absolute;
+    bottom: -50%; 
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: #fff8;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 140, 45);
+    animation: fadeOut ease-in 0.35s ;
+}
+@keyframes fadeIn {
+    from{
+        bottom: -50%;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from{
+        bottom: 0;
+        opacity: 1;
+    }
+    to{
+        bottom: -50%;
+        opacity: 0;
+    }
+}
+.profile_page .avatar:hover span{
+    bottom: 0;
+    animation: fadeIn ease-in 0.35s ;
+}
+.profile_page #file-up{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+::-webkit-file-upload-button{
+    cursor: pointer;
+}
